@@ -1,5 +1,7 @@
-const $ = s => document.querySelector(s)
-const $$ = s => document.querySelectorAll(s)
+// const $ = s => document.querySelector(s)
+// const $$ = s => document.querySelectorAll(s)
 
-let arr = $$('section')
-arr[0].classList.add('active')
+// let arr = $$('[data-markdown]')
+// arr[0].classList.add('active') 
+
+// console.log(arr) 

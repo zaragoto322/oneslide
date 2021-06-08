@@ -1,0 +1,144 @@
+.slide {
+    position: relative;
+}
+
+[data-markdown] {
+    width: 100vw;
+    height: 100vh;
+    display:flex; 
+    align-items: center;
+    justify-items: center;
+    background: grey;
+    position: absolute;
+}
+
+[data-markdown].active {
+    z-index: 1;
+}
+
+
+[data-markdown] textarea {
+    margin: auto;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 40px;
+    text-align: center;
+    background: none;
+    display: inline-block;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.control {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    z-index: 1;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+.control .iconfont {
+    font-size: 40px;
+    color: #fff;
+    margin: 16px;
+    display:block;
+    cursor: pointer;
+
+}
+
+.menu {
+    height:100vh;
+    background:#252f2d;
+    color: #fff;
+    width: 180px;
+    position: fixed; 
+    z-index: 100;
+    display: none;
+}
+
+.menu.open {
+    display: block;
+}
+
+
+
+.menu .icon-close {
+height: 20px;
+position: absolute;
+right: 10px;
+top: 10px;
+padding: 5px;
+cursor: pointer;
+color: grey;
+transition: all .3s;
+}
+
+.menu .icon-close:hover {
+    color: #fff;
+}
+
+.menu .detail {
+margin-top: 50px;
+}
+
+
+.detail .tab {
+    margin: 5px;
+    cursor: pointer;
+    padding-top: 10px;
+    color: grey;
+}
+
+.detail .tab.active {
+    color:#fff;
+}
+
+.menu .detail .iconfont {
+    margin-right: 6px;
+}
+
+.menu .detail .content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: calc(100vw - 180px);
+    height: 100vh;
+    background-color: #212a29;
+    font-size: 14px;
+}
+
+.menu .detail .content.active {
+    display: block;
+}
+
+.menu .detail .content .header {
+    font-size: 40px;
+    padding: 20px;
+    border-bottom: 2px solid #425351;
+}
+
+.menu .detail .content .body {
+    padding: 20px;
+}
+
+.menu .detail .content textarea {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+

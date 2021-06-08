@@ -1,45 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oneslide</title>
-    <style>
 
-        .slide {
-            position: relative;
-        }
+	<head>
+		<meta charset="utf-8">
 
-        [data-markdown] {
-            width: 100vw;
-            height: 100vh;
-            display:flex;
-            align-items: center;
-            justify-items: center;
-            background: grey;
-        }
+		<title>Oneslide</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_2595122_rbp36liawpq.css"> 
 
-        textarea {
-            margin: auto;
-            border: none;
-            resize: none;
-            outline: none;
-            font-size: 40px;
-            text-align: center;
-            background: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="reveal">
-        <div class="slide">
-            
-        </div>
-    </div>
+	</head>
 
-    <script src = 'js/slide.js'></script>
-    <script src = 'js/switch.js'></script>
+	<body>
 
-</body>
+        <div class="reveal">
+			<div class="slides">1</div>
+		</div>
+
+
+		<div class="control">
+			<span class="iconfont icon-setting"></span>
+		</div>
+
+		<div class="menu">
+			<span class="iconfont icon-close"></span>
+			<div class="detail">
+				<div class="tab active"><span class="iconfont icon-edit"></span>内容编辑</div>
+				<div class="tab"><span class="iconfont icon-theme"></span>主题特效</div>
+				<div class="tab"><span class="iconfont icon-download"></span>下载PDF</div>
+				<div class="tab"><span class="iconfont icon-speak"></span>演讲者模式</div>
+					<div class="content active">
+						<div class="header">编辑</div>
+						<div class="body editor">
+							<textarea></textarea>
+							<div>
+								<button>保存</button>
+							</div>
+						</div>
+					</div>
+					<div class="content">
+						<div class="header">主题特效</div>
+						<div class="body theme">
+							<textarea></textarea>
+					</div>
+					<div class="content">
+						<div class="header">下载PDF</div>
+						<div class="body download">
+							<textarea></textarea>
+					</div>
+					<div class="content">
+						<div class="header">演讲模式</div>
+						<div class="body speak">
+							<textarea></textarea>
+					</div>
+			</div>
+		</div>
+
+
+
+
+		<script src="js/switch.js"></script>
+		<script src="js/slide.js"></script>
+
+
+
+
+
+
+
+		</script>
+
+	</body>
 </html>
